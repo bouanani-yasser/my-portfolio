@@ -1,0 +1,20 @@
+.NavBar {
+   display: flex;
+   justify-content: space-between;
+   height: 8vh;
+   background-color: #eafafe;
+   .Logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .NavMenu {
+      width: 80%;
+      ul {
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         list-style: none;
+      }
+   }
+}
