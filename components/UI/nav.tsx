@@ -1,15 +1,13 @@
-import HomeStyles from '../../styles/Home.module.scss';
-
-function Nav(props: { color: string }) {
+function Nav() {
    return (
-      <nav className={HomeStyles.NavBar}>
-         <div className={HomeStyles.Logo}>Bouanani Yasser</div>
-         <div className={HomeStyles.NavMenu}>
+      <nav className="">
+         <div className="">Bouanani Yasser</div>
+         <div className="">
             <ul>
-               <li>Home</li>
-               <li>Services</li>
+               <li>Hi</li>
                <li>Works</li>
-               <li>Contact</li>
+               <li>About</li>
+               <li>Connect</li>
             </ul>
          </div>
       </nav>
