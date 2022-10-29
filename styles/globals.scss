@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+   font-family: 'Ubuntu', sans-serif;
+}
 .my-icon {
-   color: #eeefff;
-   width: 3rem;
-   height: 3rem;
+   // color: white;
+   width: 2rem;
+   height: 2rem;
    margin: auto;
    margin: 10px;
    cursor: pointer;
@@ -13,46 +17,6 @@
    transform: scale(0.9) rotateZ(0deg);
    &:hover {
       transition: ease-in-out 0.5s;
-      transform: scale(1.1) rotateZ(30deg);
+      transform: scale(1.1) rotateZ(10deg);
    }
-}
-
-.fr {
-   padding-top: 3px;
-   border: 3px solid #eeefff;
-   border-radius: 10px;
-   color: #444;
-   background-color: #eeefff;
-}
-
-.swiper {
-   width: 100%;
-   height: 100%;
-}
-
-.swiper-slide {
-   text-align: center;
-   font-size: 18px;
-   background: #fff;
-
-   /* Center slide text vertically */
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: -webkit-flex;
-   display: flex;
-   -webkit-box-pack: center;
-   -ms-flex-pack: center;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-box-align: center;
-   -ms-flex-align: center;
-   -webkit-align-items: center;
-   align-items: center;
-}
-
-.swiper-slide img {
-   display: block;
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
 }
