@@ -6,6 +6,24 @@
 * {
    font-family: 'Ubuntu', sans-serif;
 }
+
+.bg-1 {
+   background: linear-gradient(-45deg, #3b89d7, #2de5eb, #a458f1, #ff0080);
+   background-clip: text;
+   background-size: 300%;
+}
+.bg-2 {
+   // background: linear-gradient(-45deg, #40e0d0, #ff8c00, #ff0080);
+   background: linear-gradient(-45deg, #a458f1, #ff0080, #3b89d7, #2de5eb);
+   background-clip: text;
+   background-size: 300%;
+}
+
+.title-gradient {
+   animation: animated-text 7s ease-in-out infinite;
+   color: transparent;
+}
+
 .my-icon {
    // color: white;
    width: 2rem;
@@ -18,5 +36,18 @@
    &:hover {
       transition: ease-in-out 0.5s;
       transform: scale(1.1) rotateZ(10deg);
+   }
+}
+
+@keyframes animated-text {
+   0% {
+      background-position: 0 50%;
+   }
+
+   50% {
+      background-position: 100% 50%;
+   }
+   100% {
+      background-position: 0 50%;
    }
 }

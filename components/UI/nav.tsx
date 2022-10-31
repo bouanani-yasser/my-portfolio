@@ -4,7 +4,7 @@ import { SiFreelancer } from 'react-icons/si';
 import { VscGithub } from 'react-icons/vsc';
 function Nav() {
    return (
-      <header className=" border-b-2  w-full">
+      <header className="w-full">
          <nav className="flex justify-between items-center align-middle max-w-[80%] h-[70px] m-auto border-gray-600">
             <div className="w-1/3 p-auto my-auto  font-bold">{`</>`}</div>
             <ul className="flex flex-row  space-x-10 justify-center items-center d w-1/2 font-bold">
@@ -14,7 +14,7 @@ function Nav() {
                <li className="p-1 m-1 cursor-pointer">About</li>
             </ul>
          </nav>
-         <div className="absolute bottom-[5%] left-[5%]">
+         <div className="absolute bottom-[10%] left-[5%]">
             <ul className="flex flex-col  justify-center items-center">
                <li>
                   <BsTwitter className="my-icon" />

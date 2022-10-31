@@ -6,7 +6,18 @@ module.exports = {
    ],
    darkMode: 'class',
    theme: {
-      extend: {},
+      extend: {
+         keyframes: {
+            text: {
+               '0%': { backgroundPosition: '0 50%' },
+               '50%': { backgroundPosition: '100% 50%' },
+               '50%': { backgroundPosition: '0 50%' },
+            },
+         },
+         animation: {
+            animatedText: 'text 10s ease-in-out infinite',
+         },
+      },
    },
    plugins: [],
 };
