@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  font-family: 'Ubuntu', sans-serif;
+  z-index: 10;
+}
+
+.bg-1 {
+  background: linear-gradient(-45deg, #3b89d7, #2de5eb, #a458f1, #ff0080);
+  background-clip: text;
+  background-size: 300%;
+}
+
+.bg-2 {
+  background: linear-gradient(-45deg, #a458f1, #ff0080, #3b89d7, #2de5eb);
+  background-clip: text;
+  background-size: 300%;
+}
+
+.title-gradient {
+  -webkit-animation: animated-text 7s ease-in-out infinite;
+          animation: animated-text 7s ease-in-out infinite;
+  color: transparent;
+}
+
+.my-icon {
+  width: 2rem;
+  height: 2rem;
+  margin: auto;
+  margin: 10px;
+  cursor: pointer;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+  -webkit-transform: scale(0.9) rotateZ(0deg);
+          transform: scale(0.9) rotateZ(0deg);
+}
+
+.my-icon:hover {
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+  -webkit-transform: scale(1.1) rotateZ(10deg);
+          transform: scale(1.1) rotateZ(10deg);
+}
+
+@-webkit-keyframes animated-text {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes animated-text {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+/*# sourceMappingURL=globals.css.map */

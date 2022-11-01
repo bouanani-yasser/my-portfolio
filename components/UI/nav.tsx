@@ -11,7 +11,9 @@ function Nav() {
                <li className="p-1 m-1 cursor-pointer">Hi</li>
                <li className="p-1 m-1 cursor-pointer">Works</li>
                <li className="p-1 m-1 cursor-pointer">Connect</li>
-               <li className="p-1 m-1 cursor-pointer">About</li>
+               <button className="text-[#ff0080] m-10 w-24 px-4 border-solid border-2 border-[#ff0080]">
+                  Resume
+               </button>
             </ul>
          </nav>
          <div className="absolute bottom-[10%] left-[5%]">
