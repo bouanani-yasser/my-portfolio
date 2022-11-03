@@ -16,7 +16,7 @@ function Nav() {
                <li className="p-1 m-1 cursor-pointer">Hi</li>
                <li className="p-1 m-1 cursor-pointer">Works</li>
                <li className="p-1 m-1 cursor-pointer">Connect</li>
-               <button className="w-24 h-8 text-black bg-blue-100 rounded-lg dark:bg-slate-800 flex items-center justify-center hover:ring-2 ring-blue-400 transition-all duration-300 focus:outline-none">
+               <button className="w-24 h-8 text-black bg-blue-100 rounded-lg  flex items-center justify-center hover:ring-2 ring-[#3b89d7] transition-all duration-300 focus:outline-none">
                   Resume
                </button>
                <Toggler />
