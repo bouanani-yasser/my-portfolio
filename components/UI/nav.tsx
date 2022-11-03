@@ -1,8 +1,13 @@
 import { BsTwitter } from 'react-icons/bs';
-import { BsLinkedin } from 'react-icons/bs';
+import { TbBrandLinkedin } from 'react-icons/tb';
 import { SiFreelancer } from 'react-icons/si';
 import { VscGithub } from 'react-icons/vsc';
+import { ImWhatsapp } from 'react-icons/im';
+import { useAppContext } from '../../context/appContext';
+import Toggler from './Toggler';
+
 function Nav() {
+   const { setDark } = useAppContext();
    return (
       <header className="w-full">
          <nav className="flex justify-between items-center align-middle max-w-[80%] h-[70px] m-auto border-gray-600">
@@ -11,24 +16,28 @@ function Nav() {
                <li className="p-1 m-1 cursor-pointer">Hi</li>
                <li className="p-1 m-1 cursor-pointer">Works</li>
                <li className="p-1 m-1 cursor-pointer">Connect</li>
-               <button className="text-[#ff0080] m-10 w-24 px-4 border-solid border-2 border-[#ff0080]">
+               <button className="w-24 h-8 text-black bg-blue-100 rounded-lg dark:bg-slate-800 flex items-center justify-center hover:ring-2 ring-blue-400 transition-all duration-300 focus:outline-none">
                   Resume
                </button>
+               <Toggler />
             </ul>
          </nav>
-         <div className="absolute bottom-[10%] left-[5%]">
+         <div className="absolute top-[130px] left-[5%]">
             <ul className="flex flex-col  justify-center items-center">
                <li>
                   <BsTwitter className="my-icon" />
                </li>
                <li>
-                  <BsLinkedin className="my-icon" />
+                  <TbBrandLinkedin className="my-icon" />
                </li>
                <li>
                   <SiFreelancer className="my-icon fr" />
                </li>
                <li>
                   <VscGithub className="my-icon" />
+               </li>
+               <li>
+                  <ImWhatsapp className="my-icon" />
                </li>
             </ul>
          </div>

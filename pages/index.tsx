@@ -9,7 +9,7 @@ import Hi from '../components/Hi';
 
 const Home: NextPage = () => {
    return (
-      <div className=" bg-white min-h-screen relative ">
+      <div className="dark:bg-black bg-white min-h-screen relative ">
          <Head>
             <title>Yasser Bouanani</title>
             <meta name="description" content="Welcome to my portfolio" />
