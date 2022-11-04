@@ -71,20 +71,20 @@ const Hi: FC = () => {
                      className=" bg-2 title-gradient"
                      style={{ fontSize: 'clamp(20px, 8vw, 50px)' }}
                   >
-                     A Software Engineer & Fullstack Developer
+                     Software Engineer & Fullstack Developer
                   </motion.div>
                </div>
             </div>
             <div className="mx-[5%] font-bold text-3xl">
                <motion.button
                   variants={actionsItem}
-                  className="text-white rounded-lg m-10 w-64 p-4 bg-gradient-to-r from-[#3b89d7] to-[#2de5eb]  drop-shadow-[0_5px_10px_rgba(0,0,0,0.5)] "
+                  className="text-[#3b89d7] rounded-lg m-10 w-64 p-4 border-solid border-2  border-[#3b89d7] "
                >
                   Contact me
                </motion.button>
                <motion.button
                   variants={actionsItem}
-                  className="text-[#ff0080] rounded-lg m-10 w-64 p-4 border-solid border-4 border-[#ff0080]"
+                  className="text-[#ff0080] rounded-lg m-10 w-64 p-4 border-solid border-2 border-[#ff0080]"
                >
                   Works
                </motion.button>

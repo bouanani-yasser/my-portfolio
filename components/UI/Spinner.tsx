@@ -4,7 +4,7 @@ export function Spinner() {
    return (
       <AnimatePresence>
          <motion.div
-            className="flex justify-center items-center h-[100vh] dark:bg-[#0F172A] "
+            className="flex justify-center items-center h-[100vh] dark:bg-slate-900"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
