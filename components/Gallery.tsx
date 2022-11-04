@@ -28,6 +28,7 @@ const Gallery: FC<GalleryProps> = ({ folder }) => {
             >
                {len.map((_, index) => (
                   <a
+                     key={index}
                      href={`works/${dir}/${index}.${ext}`}
                      className={`${index !== 0 && 'hidden'}`}
                   >

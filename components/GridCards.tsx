@@ -8,8 +8,8 @@ const GridCards: FC<GridCardsProps> = () => {
    //    const gallery = useRef<HTMLDivElement>(null);
    return (
       <div className="grid-card grid gap-4 grid-cols-3 grid-rows-3">
-         {works.map((el) => (
-            <div className="relative">
+         {works.map((el, index) => (
+            <div key={index} className="relative">
                {/* <Image
                   width={500}
                   height={400}
