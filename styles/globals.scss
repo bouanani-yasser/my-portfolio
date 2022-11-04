@@ -40,6 +40,20 @@
    }
 }
 
+.spin {
+   animation: spin 1s infinite;
+   transition: transform 0.3;
+}
+
+@keyframes spin {
+   from {
+      transform: rotate(0);
+   }
+   to {
+      transform: rotate(360deg);
+   }
+}
+
 @keyframes animated-text {
    0% {
       background-position: 0 50%;
