@@ -49,7 +49,7 @@ const Hi: FC = () => {
             ></path>
          </svg>
          <motion.div
-            className="mx-[10%] my-[50px] h-[100vh]  max-w-[80%]"
+            className="mx-[10%] my-[50px] h-fit  max-w-[80%]"
             variants={container}
             initial="hidden"
             animate="show"
@@ -78,13 +78,13 @@ const Hi: FC = () => {
             <div className="mx-[5%] font-bold text-3xl">
                <motion.button
                   variants={actionsItem}
-                  className="text-[#3b89d7] rounded-lg m-10 w-64 p-4 border-solid border-2  border-[#3b89d7] "
+                  className="text-[#3b89d7] text-xl rounded-lg m-10 w-48 p-4 border-solid border-2  border-[#3b89d7] "
                >
                   Contact me
                </motion.button>
                <motion.button
                   variants={actionsItem}
-                  className="text-[#ff0080] rounded-lg m-10 w-64 p-4 border-solid border-2 border-[#ff0080]"
+                  className="text-[#ff0080] text-xl  rounded-lg m-10 w-48 p-4 border-solid border-2 border-[#ff0080]"
                >
                   Works
                </motion.button>

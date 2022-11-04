@@ -10,6 +10,7 @@
    },
    "dependencies": {
       "framer-motion": "6.2.4",
+      "lightgallery": "^2.7.0",
       "next": "12.1.0",
       "next-themes": "^0.2.1",
       "react": "17.0.2",

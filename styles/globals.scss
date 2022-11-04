@@ -41,8 +41,8 @@
 }
 
 .spin {
-   animation: spin 1s infinite;
-   transition: transform 0.3;
+   animation: spin 1s forwards;
+   transition: transform 1s;
 }
 
 @keyframes spin {
