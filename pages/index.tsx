@@ -4,7 +4,7 @@ import Nav from '../components/UI/nav';
 import Hi from '../components/Hi';
 
 import GridCard from '../components/GridCards';
-import Contact from '../components/contact';
+import Contact from '../components/Contact';
 
 const Home: NextPage = () => {
    return (
