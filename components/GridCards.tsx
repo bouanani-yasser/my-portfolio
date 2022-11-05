@@ -4,18 +4,15 @@ import Gallery from './Gallery';
 interface GridCardsProps {}
 
 const GridCards: FC<GridCardsProps> = () => {
-   const works = ['maloma.png.3', 'n.jpg.5', 'wms.jpg.5'];
+   const works = ['maloma.png.3', 'n.jpg.5', 'wms.jpg.5', 'n2.png.2'];
    //    const gallery = useRef<HTMLDivElement>(null);
    return (
-      <div className="grid-card grid gap-4 grid-cols-3 grid-rows-3">
+      <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
          {works.map((el, index) => (
-            <div key={index} className="relative">
-               {/* <Image
-                  width={500}
-                  height={400}
-                  src={`/works/${el.split('.')[0]}/0.${el.split('.')[1]}`}
-                  onClick={() => gallery.current?.Click()}
-               /> */}
+            <div
+               key={index}
+               className="relative max-h-[300px] min-w-[300px] overflow-hidden rounded-lg shadow-2xl dark:shadow-gray-600"
+            >
                <Gallery folder={el} />
             </div>
          ))}

@@ -4,6 +4,7 @@ import Nav from '../components/UI/nav';
 import Hi from '../components/Hi';
 
 import GridCard from '../components/GridCards';
+import Contact from '../components/contact';
 
 const Home: NextPage = () => {
    return (
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
             <h1 className="m-10 text-5xl text-[#3b89d7]">#My Works</h1>
             <GridCard />
          </div>
+         <Contact />
       </div>
    );
 };
