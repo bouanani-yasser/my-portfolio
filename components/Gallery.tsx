@@ -27,7 +27,7 @@ const Gallery: FC<GalleryProps> = ({ folder }) => {
             plugins={[lgThumbnail, lgZoom]}
          >
             {len.map((_, index) => (
-               <Card path={`works/${dir}/${index}.${ext}`} />
+               <Card path={`works/${dir}/${index}.${ext}`} key={index} />
             ))}
          </LightGallery>
       </div>

@@ -24,9 +24,9 @@ const Contact: FC<ContactProps> = () => (
                fill="currentColor"
             >
                <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                />
             </svg>
 
@@ -86,7 +86,7 @@ const Contact: FC<ContactProps> = () => (
                </label>
 
                <input
-                  className="block w-full px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                  className="block w-full px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-90"
                   type="email"
                />
             </div>
