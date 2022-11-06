@@ -16,8 +16,8 @@ function MyApp({ Component, pageProps }: AppProps) {
    }, []);
    return (
       <AppWrapper>
-         <ThemeProvider enableSystem={true} attribute="class">
-            {loading ? <Spinner /> : <Component {...pageProps} />}{' '}
+         <ThemeProvider enableSystem={true} attribute="data-theme">
+            {loading ? <Spinner /> : <Component {...pageProps} />}
          </ThemeProvider>
       </AppWrapper>
    );

@@ -8,7 +8,7 @@ import Contact from '../components/Contact';
 
 const Home: NextPage = () => {
    return (
-      <div className=" dark:bg-slate-900 bg-white min-h-screen relative ">
+      <div className=" bg-base-200 min-h-screen relative ">
          <Head>
             <title>Yasser Bouanani</title>
             <meta name="description" content="Welcome to my portfolio" />

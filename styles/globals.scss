@@ -5,28 +5,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 * {
    font-family: 'Ubuntu', sans-serif;
-   z-index: 10;
 }
 
 .bg-1 {
-   background: linear-gradient(-45deg, #3b89d7, #2de5eb, #a458f1, #ff0080);
+   // background-color: theme('colors.secondary');
+   background: linear-gradient(
+      -45deg,
+      theme('colors.primary'),
+      theme('colors.secondary'),
+      theme('colors.accent'),
+      theme('colors.neutral')
+   );
    background-clip: text;
    background-size: 300%;
 }
 .bg-2 {
    // background: linear-gradient(-45deg, #40e0d0, #ff8c00, #ff0080);
-   background: linear-gradient(-45deg, #a458f1, #ff0080, #3b89d7, #2de5eb);
+   background: linear-gradient(
+      -45deg,
+      theme('colors.neutral'),
+      theme('colors.accent'),
+      theme('colors.secondary'),
+      theme('colors.primary')
+   );
    background-clip: text;
    background-size: 300%;
 }
 
 .title-gradient {
-   animation: animated-text 7s ease-in-out infinite;
+   animation: animated-text 9s ease-in-out infinite;
    color: transparent;
 }
 
 .my-icon {
-   // color: white;
+   color: theme('colors.secondary');
+   z-index: 999;
    width: 3rem;
    height: 3rem;
    margin: auto;
@@ -85,6 +98,7 @@
    height: 7px;
    border-radius: 50%;
    background: #3b89d7;
+   background: theme('colors.primary');
    margin: -4px 0 0 -4px;
 }
 .lds-roller div:nth-child(1) {
