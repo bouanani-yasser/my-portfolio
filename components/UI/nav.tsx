@@ -18,13 +18,13 @@ function Nav() {
                <div className="dropdown dropdown-end flex justify-center items-center">
                   <label
                      tabIndex={0}
-                     className="btn btn-sm btn-secondary text-base-100 w-10 h-10 mx-2 my-4  rounded-full  outline-none border-none  hover:ring-2 ring-accent transition-all"
+                     className="btn btn-sm btn-secondary text-base-100 w-10 h-10 mx-2 my-4  rounded-full  outline-none border-none  transition-all"
                   >
                      <FaPaintBrush className="text-Xl w-8 h-8" />
                   </label>
                   <ul
                      tabIndex={0}
-                     className="z-10 bg-base-200  dropdown-content bg-transparent text-primary menu top-14 left-0 shadow  rounded-full w-64 h-12"
+                     className="z-10 bg-base-200  dropdown-content bg-transparent text-primary menu top-14 left-0 shadow  rounded-full w-12  overflow-x-hidden"
                   >
                      <li
                         data-theme="cyberpunk"

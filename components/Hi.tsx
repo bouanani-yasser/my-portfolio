@@ -64,13 +64,13 @@ const Hi: FC = () => {
             <div className="mt-4 flex flex-1 justify-center space-x-2 lg:mt-6 lg:ml-24 lg:justify-start">
                <motion.button
                   variants={actionsItem}
-                  className="z-10 btn btn-ghost btn-active lg:btn-lg normal-case"
+                  className="z-10 btn btn-outline  lg:btn-lg normal-case"
                >
                   Contact me
                </motion.button>
                <motion.button
                   variants={actionsItem}
-                  className="z-10 btn lg:btn-lg normal-case"
+                  className="z-10 btn glass text-primary lg:btn-lg normal-case"
                >
                   Works
                </motion.button>
