@@ -38,12 +38,12 @@
 }
 
 .my-icon {
-   color: theme('colors.secondary');
+   // color: theme('colors.secondary');
    z-index: 999;
-   width: 3rem;
-   height: 3rem;
+   width: 2rem;
+   height: 2rem;
    margin: auto;
-   margin: 15px;
+   margin: 5px 20px;
    cursor: pointer;
    transition: ease-in-out 0.5s;
    transform: scale(0.9) rotateZ(0deg);
@@ -164,4 +164,18 @@
    100% {
       transform: rotate(360deg);
    }
+}
+
+body::-webkit-scrollbar {
+   width: 0.6rem;
+}
+
+body::-webkit-scrollbar-track {
+   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   background-color: darkgrey;
+   // outline: 1px solid slategrey;
 }
