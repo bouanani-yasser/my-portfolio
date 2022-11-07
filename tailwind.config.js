@@ -33,7 +33,13 @@ module.exports = {
          'valentine',
          'halloween',
          'garden',
-         'forest',
+         {
+            forest: {
+               ...require('daisyui/src/colors/themes')['[data-theme=forest]'],
+               secondary: '#066048',
+               'primary-focus': '#064E3C',
+            },
+         },
          'aqua',
          'lofi',
          'pastel',

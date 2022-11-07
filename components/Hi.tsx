@@ -24,7 +24,7 @@ const Hi: FC = () => {
    };
 
    return (
-      <div className="relative pt-10 bg-gradient-to-br from-base-200 dark:from-slate-900 to-secondary text-primary-content h-[100vh]">
+      <div className="relative pt-10 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 h-[100vh]">
          <motion.div
             className="mx-[5%] py-[3%]  max-w-[80%]"
             variants={container}
@@ -32,7 +32,7 @@ const Hi: FC = () => {
             animate="show"
          >
             <div className="flex-1 px-24 py-2">
-               <div className="text-xl text-primary-content text-left   leading-relaxed font-bold ...">
+               <div className="text-xl  text-left   leading-relaxed font-bold ...">
                   <motion.h1 variants={item} className=" ">
                      Hi, I am
                   </motion.h1>
@@ -53,7 +53,7 @@ const Hi: FC = () => {
                   >
                      A Software Engineer & Fullstack Developer
                   </motion.div>
-                  <div className="flex w-full flex-col items-center space-y-10 lg:flex-row lg:items-start lg:space-x-4 lg:space-y-0">
+                  <div className="flex w-full flex-col  space-y-10 lg:flex-row lg:items-start lg:space-x-4 lg:space-y-0">
                      <div className="my-2 flex max-w-sm flex-col gap-2 text-left">
                         <div className="flex items-center g gap-2">
                            <svg
@@ -131,10 +131,10 @@ const Hi: FC = () => {
                   </div>
                </div>
             </div>
-            <div className="mt-4 flex flex-1 justify-center space-x-2 lg:mt-6 lg:ml-24 lg:justify-start">
+            <div className="mt-4 flex flex-1 space-x-2 lg:mt-6 ml-24 justify-start">
                <motion.button
                   variants={actionsItem}
-                  className="z-10 btn btn-outline  lg:btn-lg normal-case"
+                  className="z-10 btn  btn-secondary active  lg:btn-lg normal-case"
                >
                   Contact me
                </motion.button>
@@ -147,7 +147,7 @@ const Hi: FC = () => {
             </div>
          </motion.div>
          <svg
-            className=" dark:fill-slate-700 absolute -bottom-20 z-1 fill-secondary col-start-1 row-start-1 h-auto w-full"
+            className=" dark:fill-slate-800 absolute -bottom-20 z-1 fill-secondary col-start-1 row-start-1 h-auto w-full"
             width="1600"
             height="595"
             viewBox="0 0 1600 595"

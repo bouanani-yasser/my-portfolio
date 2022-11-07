@@ -22,14 +22,14 @@ const Toggler = () => {
       <button
          className={`${
             clicked ? 'spin' : ''
-         }  w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center  hover:ring-2 ring-blue-400 transition-all duration-1000 focus:outline-none`}
+         }  btn btn-sm glass text-primary-content w-10 h-10  my-4  rounded-full  outline-none border-none  transition-all`}
          onClick={clickHandler}
          aria-label="Toggle Dark Mode"
       >
          {theme === 'light' ? (
-            <GiMoon className="text-[#36A9DE] w-5 h-5" />
+            <GiMoon className="text-slate-900 w-10 h-10" />
          ) : (
-            <FaSun className="text-yellow-500 w-5 h-5" />
+            <FaSun className="text-yellow-500 w-10 h-10 " />
          )}
       </button>
    );
