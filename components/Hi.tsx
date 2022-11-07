@@ -24,14 +24,14 @@ const Hi: FC = () => {
    };
 
    return (
-      <div className="relative pt-10 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 h-[100vh]">
+      <div className="relative m-0 mb-40  bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 h-[100vh]">
          <motion.div
-            className="mx-[5%] py-[3%]  max-w-[80%]"
+            className="py-[3%] w-full"
             variants={container}
             initial="hidden"
             animate="show"
          >
-            <div className="flex-1 px-24 py-2">
+            <div className="flex-1 p-32 py-2">
                <div className="text-xl  text-left   leading-relaxed font-bold ...">
                   <motion.h1 variants={item} className=" ">
                      Hi, I am
@@ -131,7 +131,7 @@ const Hi: FC = () => {
                   </div>
                </div>
             </div>
-            <div className="mt-4 flex flex-1 space-x-2 lg:mt-6 ml-24 justify-start">
+            <div className="mt-4 flex flex-1 space-x-2 lg:mt-6 ml-32 justify-start">
                <motion.button
                   variants={actionsItem}
                   className="z-10 btn  btn-secondary active  lg:btn-lg normal-case"
@@ -147,7 +147,7 @@ const Hi: FC = () => {
             </div>
          </motion.div>
          <svg
-            className=" dark:fill-slate-800 absolute -bottom-20 z-1 fill-secondary col-start-1 row-start-1 h-auto w-full"
+            className=" dark:fill-slate-800 absolute -bottom-48 z-1 fill-secondary col-start-1 row-start-1 h-auto w-full"
             width="1600"
             height="595"
             viewBox="0 0 1600 595"

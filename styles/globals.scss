@@ -166,15 +166,15 @@
    }
 }
 
-body::-webkit-scrollbar {
+.drawer-content::-webkit-scrollbar {
    width: 0.6rem;
 }
 
-body::-webkit-scrollbar-track {
+.drawer-content::-webkit-scrollbar-track {
    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
-body::-webkit-scrollbar-thumb {
+.drawer-content::-webkit-scrollbar-thumb {
    border-radius: 10px;
    background-color: darkgrey;
    // outline: 1px solid slategrey;

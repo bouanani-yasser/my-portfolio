@@ -22,7 +22,7 @@ const Toggler = () => {
       <button
          className={`${
             clicked ? 'spin' : ''
-         }  btn btn-sm glass text-primary-content w-10 h-10  my-4  rounded-full  outline-none border-none  transition-all`}
+         }  btn btn-sm glass text-primary-content w-10 h-10   rounded-full  outline-none border-none  transition-all`}
          onClick={clickHandler}
          aria-label="Toggle Dark Mode"
       >
