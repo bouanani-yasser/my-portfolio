@@ -43,10 +43,7 @@ function Nav({ children }: { children: JSX.Element }) {
       <div className="drawer">
          <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
          <div className="drawer-content flex flex-col">
-            <div
-               className="w-full navbar overflow-x-clip  font-bold z-10 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100"
-               style={{}}
-            >
+            <div className="w-full navbar justify-between overflow-x-clip  font-bold z-10 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100">
                <div className="flex-none lg:hidden">
                   <label
                      htmlFor="my-drawer-3"
@@ -94,7 +91,7 @@ function Nav({ children }: { children: JSX.Element }) {
                      </button>
                   </ul>
                </div>
-               <div className="mr-2 lg:mr-[9%] flex flex-1 justify-end lg:justify-start items-center">
+               <div className="mr-2 lg:mr-[9%] ml-8 flex flex-1 md:flex-none justify-end lg:justify-start items-center">
                   <div className="dropdown dropdown-end flex justify-center items-center">
                      <label
                         tabIndex={0}
