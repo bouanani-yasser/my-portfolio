@@ -44,7 +44,7 @@ function Nav({ children }: { children: JSX.Element }) {
          <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
          <div className="drawer-content flex flex-col">
             <div
-               className="w-full navbar font-bold z-10 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100"
+               className="w-full navbar overflow-x-clip  font-bold z-10 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100"
                style={{}}
             >
                <div className="flex-none lg:hidden">
@@ -94,7 +94,7 @@ function Nav({ children }: { children: JSX.Element }) {
                      </button>
                   </ul>
                </div>
-               <div className="flex flex-1 lg:flex-none lg:mr-[9%] justify-end lg:justify-start items-center mx-10">
+               <div className="mr-2 lg:mr-[9%] flex flex-1 justify-end lg:justify-start items-center">
                   <div className="dropdown dropdown-end flex justify-center items-center">
                      <label
                         tabIndex={0}
@@ -121,9 +121,33 @@ function Nav({ children }: { children: JSX.Element }) {
             </div>
             {children}
          </div>
-         <div className="drawer-side">
+         <div className="drawer-side font-bold">
             <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-            <ul className="menu p-4 w-80 bg-base-100"></ul>
+            <ul className="menu p-4 w-80 bg-base-100 justify-between  ">
+               <div>
+                  <li className="p-1 m-4 cursor-pointer ">Hi</li>
+                  <li className="p-1 m-4 cursor-pointer">Works</li>
+                  <li className="p-1 m-4 cursor-pointer">Connect</li>
+                  <button className="w-24 m-4 h-8 btn btn-sm btn-outline btn-secondary ">
+                     Resume
+                  </button>
+               </div>
+               <div className="flex space-x-2 mx-auto ">
+                  <li>
+                     <ImWhatsapp className="text-primary w-14 h-14 bg-base-200" />
+                  </li>
+                  <li>
+                     <VscGithub className="text-primary w-14 h-14 bg-base-200" />
+                  </li>
+
+                  <li>
+                     <TbBrandLinkedin className="text-primary w-14 h-14 bg-base-200" />
+                  </li>
+                  <li>
+                     <SiFreelancer className="text-primary w-14 h-14 bg-base-200" />
+                  </li>
+               </div>
+            </ul>
          </div>
       </div>
    );
