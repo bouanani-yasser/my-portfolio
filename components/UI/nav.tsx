@@ -50,7 +50,7 @@ function Nav({ children }: { children: JSX.Element }) {
                <div className="flex-none lg:hidden">
                   <label
                      htmlFor="my-drawer-3"
-                     className="btn btn-sm btn-square  btn-outline"
+                     className="btn btn-sm ml-8 btn-square h-[2.5rem] w-[2.5rem]  btn-outline"
                   >
                      <svg
                         xmlns="http://www.w3.org/2000/svg"

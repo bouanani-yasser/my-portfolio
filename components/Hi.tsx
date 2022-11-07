@@ -26,35 +26,30 @@ const Hi: FC = () => {
    return (
       <div className="relative m-0 mb-40  bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 h-[100vh]">
          <motion.div
-            className="py-[3%] w-full"
+            className="px-10 py-5 w-full"
             variants={container}
             initial="hidden"
             animate="show"
          >
-            <div className="flex-1 p-32 py-2">
-               <div className="text-xl  text-left   leading-relaxed font-bold ...">
-                  <motion.h1 variants={item} className=" ">
+            <div className="flex-1 md:px-24 py-2 text-3xl">
+               <div className="text-left   leading-relaxed font-bold ...">
+                  <motion.h1 variants={item} className="">
                      Hi, I am
                   </motion.h1>
                   <motion.div
                      variants={item}
-                     className="bg-1 title-gradient  "
-                     style={{
-                        fontSize: 'clamp(30px, 8vw, 50px)',
-                        background: 'var(primary)',
-                     }}
+                     className="bg-1 text-3xl md:text-5xl title-gradient  "
                   >
                      Yasser Bouanani
                   </motion.div>
                   <motion.div
                      variants={item}
-                     className=" bg-2 title-gradient"
-                     style={{ fontSize: 'clamp(20px, 8vw, 30px)' }}
+                     className="text-2xl md:text-4xl my-2 bg-2 title-gradient"
                   >
                      A Software Engineer & Fullstack Developer
                   </motion.div>
-                  <div className="flex w-full flex-col  space-y-10 lg:flex-row lg:items-start lg:space-x-4 lg:space-y-0">
-                     <div className="my-2 flex max-w-sm flex-col gap-2 text-left">
+                  <div className="flex w-full flex-col text-lg md:text-2xl  space-y-10 lg:flex-row lg:items-start lg:space-x-4 lg:space-y-0">
+                     <div className="my-4 flex max-w-sm flex-col gap-2 text-left">
                         <div className="flex items-center g gap-2">
                            <svg
                               width="20"
@@ -131,7 +126,7 @@ const Hi: FC = () => {
                   </div>
                </div>
             </div>
-            <div className="mt-4 flex flex-1 space-x-2 lg:mt-6 ml-32 justify-start">
+            <div className="mt-4 flex flex-1 space-x-2 lg:mt-6 md:ml-24 justify-start">
                <motion.button
                   variants={actionsItem}
                   className="z-10 btn  btn-secondary active  lg:btn-lg normal-case"
@@ -147,7 +142,7 @@ const Hi: FC = () => {
             </div>
          </motion.div>
          <svg
-            className=" dark:fill-slate-800 absolute -bottom-48 z-1 fill-secondary col-start-1 row-start-1 h-auto w-full"
+            className=" dark:fill-slate-800 absolute -bottom-1 md:-bottom-48 z-1 fill-secondary col-start-1 row-start-1 h-auto w-full"
             width="1600"
             height="595"
             viewBox="0 0 1600 595"
