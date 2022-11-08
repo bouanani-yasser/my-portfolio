@@ -7,7 +7,7 @@ const GridCards: FC<GridCardsProps> = () => {
    const works = ['maloma.png.3', 'n.jpg.5', 'wms.jpg.5', 'n2.png.2'];
    //    const gallery = useRef<HTMLDivElement>(null);
    return (
-      <div className="grid justify-center items-center m-20 grid-cols-1 gap-6 mt-6 xl:mt-8 xl:gap-8 md:grid-cols-2 xl:grid-cols-3">
+      <div className="grid justify-center items-center m-10 grid-cols-1 gap-6 mt-6 xl:mt-8 xl:gap-8 md:grid-cols-2 xl:grid-cols-3">
          {works.map((el, index) => (
             <div
                key={index}

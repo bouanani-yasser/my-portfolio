@@ -16,9 +16,9 @@ const Home: NextPage = () => {
          <Nav>
             <>
                <Hi />
-               <div className="works relative ">
-                  <h1 className="m-10 z-10 text-5xl text-[#3b89d7]">
-                     #My Works
+               <div className="works">
+                  <h1 className="m-10 p-2 z-10 font-bold  text-3xl text-primary border-solid border-primary  border-l-4">
+                     My Works
                   </h1>
                   <GridCard />
                </div>
