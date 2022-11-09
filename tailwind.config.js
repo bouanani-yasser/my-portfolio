@@ -37,7 +37,7 @@ module.exports = {
                secondary: '#BA5D23',
                accent: '#FFC107',
                neutral: '#FFC107',
-               'base-100': '#ffffff',
+               'base-100': '#242933',
                'primary-focus': '#5E565A',
                '--rounded-box': '0rem',
                '--rounded-btn': '0rem',

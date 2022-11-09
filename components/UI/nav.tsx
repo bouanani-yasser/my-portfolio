@@ -88,7 +88,7 @@ function Nav({ children }: { children: JSX.Element }) {
             </div>
             {children}
          </div>
-         <div className="drawer-side font-bold">
+         <div className="drawer-side font-bold dark:bg-[#242933]">
             <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
             <ul className="menu p-4 w-80 bg-base-100 justify-between  ">
                <div>

@@ -8,7 +8,7 @@ import { ImWhatsapp } from 'react-icons/im';
 interface ContactProps {}
 
 const Contact: FC<ContactProps> = () => (
-   <section className="w-full max-w-2xl px-6 py-4 mx-auto my-20 rounded-lg shadow-md dark:bg-slate-900">
+   <section className="w-full m-auto max-w-3xl px-6 py-4 rounded-lg ">
       <h2 className="text-3xl font-semibold text-center ">Get in touch</h2>
 
       {/* <p className="mt-3 text-center text-gray-600 dark:text-gray-400">
@@ -71,17 +71,17 @@ const Contact: FC<ContactProps> = () => (
       <div className="mx-auto flex">
          <ul className="list-none m-10 flex mx-auto space-x-10">
             <li>
-               <ImWhatsapp className="text-neutral w-10 h-10 bg-slate-300 rounded-md" />
+               <ImWhatsapp className="text-primary-content p-1 w-10 h-10 bg-secondary rounded-md" />
             </li>
             <li>
-               <VscGithub className="text-neutral w-10 h-10 bg-slate-300 rounded-md" />
+               <VscGithub className="text-primary-content p-1 w-10 h-10 bg-secondary rounded-md" />
             </li>
 
             <li>
-               <TbBrandLinkedin className="text-neutral w-10 h-10 bg-slate-300 rounded-md" />
+               <TbBrandLinkedin className="text-primary-content p-1 w-10 h-10 bg-secondary rounded-md" />
             </li>
             <li>
-               <SiFreelancer className="text-neutral w-10 h-10 bg-slate-300 rounded-md" />
+               <SiFreelancer className="text-primary-content p-1 w-10 h-10 bg-secondary rounded-md" />
             </li>
          </ul>
       </div>
