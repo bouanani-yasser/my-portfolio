@@ -24,7 +24,10 @@ const Hi: FC = () => {
    };
 
    return (
-      <div className="relative -z-20 m-0 pb-64 h-[100vh]" id="hi">
+      <div
+         className="relative -z-20 m-0 pb-64 h-[100vh] overflow-x-clip"
+         id="hi"
+      >
          <motion.div
             className="px-10 py-5 w-full"
             variants={container}
@@ -143,7 +146,7 @@ const Hi: FC = () => {
                </motion.a>
             </div>
          </motion.div>
-         <div className="relative bottom-0 -z-10 lg:bottom-64 md:bottom-40">
+         <div className="scale-150  md:scale-100 relative bottom-0 -z-10 lg:bottom-64 md:bottom-40">
             <svg
                className="z-1 fill-secondary col-start-1 row-start-1 h-auto w-full"
                width="1600"
