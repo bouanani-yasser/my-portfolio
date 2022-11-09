@@ -11,9 +11,9 @@ const Contact: FC<ContactProps> = () => (
    <section className="w-full max-w-2xl px-6 py-4 mx-auto my-20 rounded-lg shadow-md dark:bg-slate-900">
       <h2 className="text-3xl font-semibold text-center ">Get in touch</h2>
 
-      <p className="mt-3 text-center text-gray-600 dark:text-gray-400">
+      {/* <p className="mt-3 text-center text-gray-600 dark:text-gray-400">
          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-      </p>
+      </p> */}
 
       <div className="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 md:grid-cols-3">
          <a

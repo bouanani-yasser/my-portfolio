@@ -8,42 +8,12 @@ import { ImWhatsapp } from 'react-icons/im';
 
 function Nav({ children }: { children: JSX.Element }) {
    const { theme, setTheme } = useTheme();
-   const themes = [
-      'light',
-      'dark',
-      'cupcake',
-      'bumblebee',
-      'emerald',
-      'corporate',
-      'synthwave',
-      'retro',
-      'cyberpunk',
-      'valentine',
-      'halloween',
-      'garden',
-      'forest',
-      'aqua',
-      'lofi',
-      'pastel',
-      'fantasy',
-      'wireframe',
-      'black',
-      'luxury',
-      'dracula',
-      'cmyk',
-      'autumn',
-      'business',
-      'acid',
-      'lemonade',
-      'night',
-      'coffee',
-      'winter',
-   ];
+   const themes = ['lofi', 'forest', 'coffee', 'autumn', 'business'];
    return (
       <div className="drawer">
          <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
          <div className="drawer-content flex flex-col">
-            <div className="w-full navbar justify-between overflow-x-clip  font-bold z-10 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100">
+            <div className="w-full navbar justify-between overflow-x-clip  font-bold z-10 bg-transparent ">
                <div className="flex-none lg:hidden">
                   <label
                      htmlFor="my-drawer-3"
@@ -101,13 +71,13 @@ function Nav({ children }: { children: JSX.Element }) {
                      </label>
                      <ul
                         tabIndex={0}
-                        className="z-10 bg-base-200  dropdown-content bg-transparent text-primary-content menu top-14 -left-20 shadow w-80 h-64 "
+                        className="z-10 bg-base-200  dropdown-content bg-transparent text-primary-content menu top-14 -left-0 rounded-lg  shadow w-12 h-fit "
                      >
                         {themes.map((t, i) => (
                            <li
                               key={i}
                               data-theme={t}
-                              className="rounded-full m-2 w-8 h-8 bg-secondary cursor-pointer"
+                              className="rounded-full m-2 w-8 h-8 bg-secondary cursor-pointer ring-2 ring-base-100"
                               onClick={() => setTheme(t)}
                            ></li>
                         ))}

@@ -21,8 +21,28 @@ module.exports = {
    },
    daisyui: {
       themes: [
-         'light',
-         'dark',
+         {
+            light: {
+               ...require('daisyui/src/colors/themes')['[data-theme=light]'],
+               primary: '#5E565A',
+               secondary: '#BA5D23',
+               accent: '#FFC107',
+               neutral: '#FFC107',
+            },
+         },
+         {
+            dark: {
+               ...require('daisyui/src/colors/themes')['[data-theme=dark]'],
+               primary: '#5E565A',
+               secondary: '#BA5D23',
+               accent: '#FFC107',
+               neutral: '#FFC107',
+               'base-100': '#ffffff',
+               'primary-focus': '#5E565A',
+               '--rounded-box': '0rem',
+               '--rounded-btn': '0rem',
+            },
+         },
          'cupcake',
          'bumblebee',
          'emerald',
