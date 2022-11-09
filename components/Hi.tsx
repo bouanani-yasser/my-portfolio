@@ -24,7 +24,7 @@ const Hi: FC = () => {
    };
 
    return (
-      <div className="relative -z-20 m-0 pb-64 h-[100vh]">
+      <div className="relative -z-20 m-0 pb-64 h-[100vh]" id="hi">
          <motion.div
             className="px-10 py-5 w-full"
             variants={container}
@@ -127,18 +127,20 @@ const Hi: FC = () => {
                </div>
             </div>
             <div className="mt-4 flex flex-1 space-x-2 lg:mt-6 md:ml-24 justify-start">
-               <motion.button
+               <motion.a
+                  href="#contact"
                   variants={actionsItem}
                   className="z-10 btn  btn-secondary active  lg:btn-lg normal-case"
                >
                   Contact me
-               </motion.button>
-               <motion.button
+               </motion.a>
+               <motion.a
+                  href="#works"
                   variants={actionsItem}
                   className="z-10 btn btn-primary btn-outline text-base-200 lg:btn-lg normal-case"
                >
                   Works
-               </motion.button>
+               </motion.a>
             </div>
          </motion.div>
          <div className="relative bottom-0 -z-10 lg:bottom-64 md:bottom-40">

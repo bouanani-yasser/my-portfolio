@@ -8,7 +8,10 @@ import { ImWhatsapp } from 'react-icons/im';
 interface ContactProps {}
 
 const Contact: FC<ContactProps> = () => (
-   <section className="w-full m-auto max-w-3xl px-6 py-4 rounded-lg ">
+   <section
+      className="w-full m-auto max-w-3xl px-6 py-4 rounded-lg "
+      id="contact"
+   >
       <h2 className="text-3xl font-semibold text-center ">Get in touch</h2>
 
       {/* <p className="mt-3 text-center text-gray-600 dark:text-gray-400">
@@ -18,7 +21,7 @@ const Contact: FC<ContactProps> = () => (
       <div className="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 md:grid-cols-3">
          <a
             href="#"
-            className="flex flex-col items-center px-4 py-3  transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-blue-200 dark:hover:bg-blue-500"
+            className="flex flex-col items-center px-4 py-3  transition-colors duration-300 transform rounded-md hover:bg-secondary"
          >
             <svg
                className="w-5 h-5"
@@ -37,8 +40,9 @@ const Contact: FC<ContactProps> = () => (
          </a>
 
          <a
-            href="#"
-            className="flex flex-col items-center px-4 py-3  transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-blue-200 dark:hover:bg-blue-500"
+            href=" https://wa.me/+213669588289"
+            target="blank"
+            className="flex flex-col items-center px-4 py-3  transition-colors duration-300 transform rounded-md hover:bg-secondary"
          >
             <svg
                className="w-5 h-5"
@@ -54,7 +58,7 @@ const Contact: FC<ContactProps> = () => (
 
          <a
             href="mailto:hi@yasar.us"
-            className="flex flex-col items-center px-4 py-3  transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-blue-200 dark:hover:bg-blue-500"
+            className="flex flex-col items-center px-4 py-3  transition-colors duration-300 transform rounded-md hover:bg-secondary"
          >
             <svg
                className="w-5 h-5"
@@ -70,19 +74,26 @@ const Contact: FC<ContactProps> = () => (
       </div>
       <div className="mx-auto flex">
          <ul className="list-none m-10 flex mx-auto space-x-10">
-            <li>
-               <ImWhatsapp className="text-primary-content p-1 w-10 h-10 bg-secondary rounded-md" />
-            </li>
-            <li>
-               <VscGithub className="text-primary-content p-1 w-10 h-10 bg-secondary rounded-md" />
-            </li>
-
-            <li>
-               <TbBrandLinkedin className="text-primary-content p-1 w-10 h-10 bg-secondary rounded-md" />
-            </li>
-            <li>
-               <SiFreelancer className="text-primary-content p-1 w-10 h-10 bg-secondary rounded-md" />
-            </li>
+            <a href=" https://wa.me/+213669588289" target="blank">
+               <li>
+                  <ImWhatsapp className="text-primary-content p-1 w-10 h-10 bg-secondary rounded-md" />
+               </li>
+            </a>
+            <a href="http://github.com/bouanani-yasser" target="blank">
+               <li>
+                  <VscGithub className="text-primary-content p-1 w-10 h-10 bg-secondary rounded-md" />
+               </li>
+            </a>
+            <a href="http://linkedin.com/in/yasser-bouanani " target="blank">
+               <li>
+                  <TbBrandLinkedin className="text-primary-content p-1 w-10 h-10 bg-secondary rounded-md" />
+               </li>
+            </a>
+            <a href="http://freelancer.com/u/yasserbouanani" target="blank">
+               <li>
+                  <SiFreelancer className="text-primary-content p-1 w-10 h-10 bg-secondary rounded-md" />
+               </li>
+            </a>
          </ul>
       </div>
    </section>

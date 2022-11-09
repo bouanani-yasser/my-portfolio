@@ -36,29 +36,52 @@ function Nav({ children }: { children: JSX.Element }) {
                </div>
                <div className="ml-24 hidden md:block">
                   <ul className="flex justify-center items-center">
-                     <li>
-                        <ImWhatsapp className="my-icon" />
-                     </li>
-                     <li>
-                        <VscGithub className="my-icon" />
-                     </li>
-
-                     <li>
-                        <TbBrandLinkedin className="my-icon" />
-                     </li>
-                     <li>
-                        <SiFreelancer className="my-icon fr" />
-                     </li>
+                     <a href=" https://wa.me/+213669588289" target="blank">
+                        <li>
+                           <ImWhatsapp className="my-icon" />
+                        </li>
+                     </a>
+                     <a href="http://github.com/bouanani-yasser" target="blank">
+                        <li>
+                           <VscGithub className="my-icon" />
+                        </li>
+                     </a>
+                     <a
+                        href="http://linkedin.com/in/yasser-bouanani "
+                        target="blank"
+                     >
+                        <li>
+                           <TbBrandLinkedin className="my-icon" />
+                        </li>
+                     </a>
+                     <a
+                        href="http://freelancer.com/u/yasserbouanani"
+                        target="blank"
+                     >
+                        <li>
+                           <SiFreelancer className="my-icon fr" />
+                        </li>
+                     </a>
                   </ul>
                </div>
                <div className="hidden  lg:flex flex-1  justify-end">
                   <ul className="menu menu-horizontal items-center justify-end ">
-                     <li className="p-1 mx-4 cursor-pointer">Hi</li>
-                     <li className="p-1 mx-4 cursor-pointer">Works</li>
-                     <li className="p-1 mx-4 cursor-pointer">Connect</li>
-                     <button className="w-24 h-8 btn btn-sm btn-outline btn-secondary ">
+                     <a href="#hi">
+                        <li className="p-1 m-4 cursor-pointer ">Hi</li>
+                     </a>
+                     <a href="#works">
+                        <li className="p-1 m-4 cursor-pointer">Works</li>
+                     </a>
+                     <a href="#contact">
+                        <li className="p-1 m-4 cursor-pointer">Connect</li>
+                     </a>
+                     <a
+                        className="w-24 h-8 btn btn-sm btn-outline btn-secondary "
+                        href="/YasserBouanani.pdf"
+                        download
+                     >
                         Resume
-                     </button>
+                     </a>
                   </ul>
                </div>
                <div className="mr-2 lg:mr-[9%] ml-8 flex flex-1 md:flex-none justify-end lg:justify-start items-center">
@@ -92,27 +115,50 @@ function Nav({ children }: { children: JSX.Element }) {
             <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
             <ul className="menu p-4 w-80 bg-base-100 justify-between  ">
                <div>
-                  <li className="p-1 m-4 cursor-pointer ">Hi</li>
-                  <li className="p-1 m-4 cursor-pointer">Works</li>
-                  <li className="p-1 m-4 cursor-pointer">Connect</li>
-                  <button className="w-24 m-4 h-8 btn btn-sm btn-outline btn-secondary ">
+                  <a href="#hi">
+                     <li className="p-1 m-4 cursor-pointer ">Hi</li>
+                  </a>
+                  <a href="#works">
+                     <li className="p-1 m-4 cursor-pointer">Works</li>
+                  </a>
+                  <a href="#contact">
+                     <li className="p-1 m-4 cursor-pointer">Connect</li>
+                  </a>
+                  <a
+                     className="w-24 h-8 btn btn-sm btn-outline btn-secondary "
+                     href="/YasserBouanani.pdf"
+                     download
+                  >
                      Resume
-                  </button>
+                  </a>
                </div>
                <div className="flex space-x-2 mx-auto ">
-                  <li>
-                     <ImWhatsapp className="text-primary w-14 h-14 bg-base-200" />
-                  </li>
-                  <li>
-                     <VscGithub className="text-primary w-14 h-14 bg-base-200" />
-                  </li>
-
-                  <li>
-                     <TbBrandLinkedin className="text-primary w-14 h-14 bg-base-200" />
-                  </li>
-                  <li>
-                     <SiFreelancer className="text-primary w-14 h-14 bg-base-200" />
-                  </li>
+                  <a href=" https://wa.me/+213669588289" target="blank">
+                     <li>
+                        <ImWhatsapp className="text-primary w-14 h-14 bg-base-200" />
+                     </li>
+                  </a>
+                  <a href="http://github.com/bouanani-yasser" target="blank">
+                     <li>
+                        <VscGithub className="text-primary w-14 h-14 bg-base-200" />
+                     </li>
+                  </a>
+                  <a
+                     href="http://linkedin.com/in/yasser-bouanani "
+                     target="blank"
+                  >
+                     <li>
+                        <TbBrandLinkedin className="text-primary w-14 h-14 bg-base-200" />
+                     </li>
+                  </a>
+                  <a
+                     href="http://freelancer.com/u/yasserbouanani"
+                     target="blank"
+                  >
+                     <li>
+                        <SiFreelancer className="text-primary w-14 h-14 bg-base-200" />
+                     </li>
+                  </a>
                </div>
             </ul>
          </div>
