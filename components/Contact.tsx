@@ -12,7 +12,7 @@ const Contact: FC<ContactProps> = () => (
       className="w-full m-auto max-w-3xl px-6 py-4 rounded-lg "
       id="contact"
    >
-      <h2 className="text-3xl font-semibold text-center ">Get in touch</h2>
+      <h2 className="text-3xl font-semibold text-center ">Get In Touch</h2>
 
       {/* <p className="mt-3 text-center text-gray-600 dark:text-gray-400">
          Lorem ipsum dolor sit amet consectetur, adipisicing elit.

@@ -12,13 +12,14 @@ import lgZoom from 'lightgallery/plugins/zoom';
 import Card from './Card';
 
 interface GalleryProps {
-   folder: String;
+   project: any;
 }
 
-const Gallery: FC<GalleryProps> = ({ folder }) => {
-   let len = Array.from(Array(+folder.split('.')[2]).keys());
-   let dir = folder.split('.')[0];
-   let ext = folder.split('.')[1];
+const Gallery: FC<GalleryProps> = ({ project }) => {
+   const { dir } = project;
+   let len = Array.from(Array(+dir.split('.')[2]).keys());
+   let folder = dir.split('.')[0];
+   let ext = dir.split('.')[1];
    return (
       <div className="gallery">
          <LightGallery
@@ -27,7 +28,7 @@ const Gallery: FC<GalleryProps> = ({ folder }) => {
             plugins={[lgThumbnail, lgZoom]}
          >
             {len.map((_, index) => (
-               <Card path={`works/${dir}/${index}.${ext}`} key={index} />
+               <Card path={`works/${folder}/${index}.${ext}`} key={index} />
             ))}
          </LightGallery>
       </div>
