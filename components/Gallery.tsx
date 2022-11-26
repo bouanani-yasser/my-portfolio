@@ -1,15 +1,14 @@
 import { FC } from 'react';
-import Image from 'next/image';
+
+import { IoIosImages } from 'react-icons/io';
 
 import LightGallery from 'lightgallery/react';
 
 import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-zoom.css';
 import 'lightgallery/css/lg-thumbnail.css';
-// import plugins if you need
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
-import Card from './Card';
 
 interface GalleryProps {
    project: any;
@@ -21,14 +20,24 @@ const Gallery: FC<GalleryProps> = ({ project }) => {
    let folder = dir.split('.')[0];
    let ext = dir.split('.')[1];
    return (
-      <div className="gallery">
+      <div className="gallery-item relative">
          <LightGallery
             // onInit={onInit}
             speed={500}
             plugins={[lgThumbnail, lgZoom]}
          >
             {len.map((_, index) => (
-               <Card path={`works/${folder}/${index}.${ext}`} key={index} />
+               <a
+                  style={index !== 0 ? { display: 'none' } : {}}
+                  href={`works/${folder}/${index}.${ext}`}
+                  key={index}
+               >
+                  <IoIosImages size={25} />
+                  <img
+                     className="max-h-full min-w-[200px] max-w-full hidden "
+                     src={`works/${folder}/${index}.${ext}`}
+                  />
+               </a>
             ))}
          </LightGallery>
       </div>
