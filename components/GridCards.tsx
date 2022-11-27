@@ -85,11 +85,11 @@ const GridCards: FC<GridCardsProps> = () => {
    ];
 
    return (
-      <div className="grid justify-center items-center m-10 grid-cols-1 gap-6 mt-6 xl:mt-8 xl:gap-8 md:grid-cols-2 xl:grid-cols-3">
+      <div className="grid justify-center items-center m-10 grid-cols-1 gap-4 mt-6 xl:gap-8  md:grid-cols-2  xl:grid-cols-3">
          {projectsDetails.map((project, index) => (
             <div
                key={index}
-               className="relative max-h-[280px] min-w-[200px] w-[95%] md:w-[80%] overflow-hidden rounded-lg shadow-lg dark:shadow-gray-600"
+               className="relative  w-full h-full  overflow-hidden rounded-lg shadow-lg dark:shadow-gray-600"
             >
                <Card project={project} />
             </div>

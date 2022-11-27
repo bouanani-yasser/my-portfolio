@@ -13,10 +13,10 @@ const Card: FC<CardProps> = ({ project }) => {
    let ext = dir.split('.')[1];
    return (
       <div
-         className=" bg-cover rounded-lg cursor-pointer h-96 group"
+         className=" bg-cover rounded-lg cursor-pointer h-full group"
          style={{ backgroundImage: `url(${`works/${folder}/${0}.${ext}`})` }}
       >
-         <div className="relative text-white w-full m-0 h-full px-4 py-2  transition-opacity duration-700 opacity-1 backdrop-blur-sm bg-gray-800/60 ">
+         <div className="relative text-white w-full m-0 mb-10 h-full px-4 py-2  transition-opacity duration-700 opacity-1 backdrop-blur-sm bg-gray-800/60 ">
             <h2 className="mt-1 text-2xl font-semibold  capitalize">
                {project.title}
             </h2>
@@ -24,7 +24,7 @@ const Card: FC<CardProps> = ({ project }) => {
                {project.desc}
             </p>
             <h3 className="font-bold">Tools:</h3>
-            <ul className="menu menu-horizontal gap-1  my-2 flex-wrap max-w-[300px] text-secondary">
+            <ul className="flex gap-1  my-2 flex-wrap  text-secondary">
                {project.tools.map((tool: string, index: number) => (
                   <li
                      key={index}
@@ -34,7 +34,7 @@ const Card: FC<CardProps> = ({ project }) => {
                   </li>
                ))}
             </ul>
-            <div className="absolute text-secondary-content top-[240px] right-5 my-1 flex justify-start gap-3">
+            <div className="absolute text-secondary-content bottom-2  right-5 my-1 flex justify-start gap-3">
                <Gallery project={project} />
                {github && (
                   <a href={github} target="blank">
