@@ -17,7 +17,7 @@ const Home: NextPage = () => {
             <>
                <Hi />
                <div className="works md:px-24" id="works">
-                  <h1 className="m-10 p-2 z-10 font-bold  text-3xl text-primary border-solid border-primary  border-l-4">
+                  <h1 className="m-4 p-2 z-10 font-bold  text-3xl text-primary border-solid border-primary  border-l-4">
                      My Works
                   </h1>
                   <GridCard />

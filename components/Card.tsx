@@ -16,7 +16,7 @@ const Card: FC<CardProps> = ({ project }) => {
          className=" bg-cover rounded-lg cursor-pointer h-full group"
          style={{ backgroundImage: `url(${`works/${folder}/${0}.${ext}`})` }}
       >
-         <div className="relative text-white w-full m-0 mb-10 h-full px-4 py-2  transition-opacity duration-700 opacity-1 backdrop-blur-sm bg-gray-800/60 ">
+         <div className="relative text-white w-full m-0 mb-10 h-full px-4 py-2 transition-opacity duration-700 opacity-1 backdrop-blur-sm bg-gray-800/60 ">
             <h2 className="mt-1 text-2xl font-semibold  capitalize">
                {project.title}
             </h2>
