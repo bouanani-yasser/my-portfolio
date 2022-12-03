@@ -24,9 +24,9 @@ const Hi: FC = () => {
    };
 
    return (
-      <div className="relative -z-20 m-0 overflow-x-clip h-fit" id="hi">
+      <div className="relative m-0 overflow-x-clip h-fit" id="hi">
          <motion.div
-            className="px-10 py-5 w-full"
+            className="px-10 py-10 w-full"
             variants={container}
             initial="hidden"
             animate="show"
