@@ -20,15 +20,15 @@ const Card: FC<CardProps> = ({ project }) => {
             <h2 className="mt-1 text-2xl font-semibold  capitalize">
                {project.title}
             </h2>
-            <p className="mt-1 p-1 pl-5 -translate-x-5  font-light rounded-md text-xs tracking-wider text-gray-100 uppercase bg-primary">
+            <p className="mt-1 p-1 pl-5 -translate-x-5  font-light rounded-md text-xs tracking-wider text-gray-100 uppercase ">
                {project.desc}
             </p>
             <h3 className="font-bold">Tools:</h3>
-            <ul className="flex gap-1  my-2 flex-wrap  text-secondary">
+            <ul className="flex gap-1  my-2 flex-wrap ">
                {project.tools.map((tool: string, index: number) => (
                   <li
                      key={index}
-                     className="bg-base-100 rounded-md px-1 text-sm "
+                     className="bg-secondary rounded-md p-1 my-1 text-sm "
                   >
                      {tool}
                   </li>

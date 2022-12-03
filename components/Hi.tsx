@@ -24,10 +24,7 @@ const Hi: FC = () => {
    };
 
    return (
-      <div
-         className="relative -z-20 m-0 pb-64 h-[100vh] overflow-x-clip"
-         id="hi"
-      >
+      <div className="relative -z-20 m-0 overflow-x-clip h-fit" id="hi">
          <motion.div
             className="px-10 py-5 w-full"
             variants={container}
@@ -146,7 +143,11 @@ const Hi: FC = () => {
                </motion.a>
             </div>
          </motion.div>
-         <div className="scale-150  md:scale-100 sm:mt-20 relative bottom-10 sm:-bottom-10 -z-10 lg:bottom-64 md:bottom-40">
+         {/* <div
+            className="w-full absolute top-10 h-[200vh] bg-secondary"
+            style={{ clipPath: 'polygon(0 40%, 190% 0, 190% 25%, 0 90%)' }}
+         ></div> */}
+         <div className="scale-150 absolute  md:scale-100 sm:mt-20 sm:top-80 md:top-64  lg:top-24 sm:-bottom-10 -z-10 lg:bottom-64 md:bottom-40">
             <svg
                className="z-1 fill-secondary col-start-1 row-start-1 h-auto w-full"
                width="1600"

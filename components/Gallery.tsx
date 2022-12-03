@@ -32,7 +32,10 @@ const Gallery: FC<GalleryProps> = ({ project }) => {
                   href={`works/${folder}/${index}.${ext}`}
                   key={index}
                >
-                  <IoIosImages size={25} />
+                  <span className="flex">
+                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-content opacity-75"></span>
+                     <IoIosImages size={25} />
+                  </span>
                   <img
                      className="max-h-full min-w-[200px] max-w-full hidden "
                      src={`works/${folder}/${index}.${ext}`}
