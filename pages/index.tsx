@@ -17,9 +17,9 @@ const Home: NextPage = () => {
             <>
                <Hi />
                <div className="works md:px-24 mt-20" id="works">
-                  <h1 className="m-6 p-4 z-10 font-bold  text-2xl text-base-100 relative ">
+                  <h1 className="m-6 p-4 z-10 font-bold  text-2xl text-base-100 relative  ">
                      <span className="text-secondary">Some</span> Works
-                     <span className="rounded-box rotate-6 w-20 absolute left-0 top-0 -z-10 h-full bg-base-100"></span>
+                     <span className="rounded-box rotate-6 w-20 absolute left-0 top-0 -z-10 h-full bg-base-100 border-secondary border-2 border-solid"></span>
                   </h1>
                   <GridCard />
                </div>
