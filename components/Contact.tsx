@@ -76,22 +76,22 @@ const Contact: FC<ContactProps> = () => (
          <ul className="list-none m-10 flex mx-auto space-x-10">
             <a href=" https://wa.me/+213669588289" target="blank">
                <li>
-                  <ImWhatsapp className="text-primary-content p-1 w-10 h-10 bg-secondary rounded-md" />
+                  <ImWhatsapp className="text-base-100 p-1 w-10 h-10 bg-secondary rounded-md" />
                </li>
             </a>
             <a href="http://github.com/bouanani-yasser" target="blank">
                <li>
-                  <VscGithub className="text-primary-content p-1 w-10 h-10 bg-secondary rounded-md" />
+                  <VscGithub className="text-base-100 p-1 w-10 h-10 bg-secondary rounded-md" />
                </li>
             </a>
             <a href="http://linkedin.com/in/yasser-bouanani " target="blank">
                <li>
-                  <TbBrandLinkedin className="text-primary-content p-1 w-10 h-10 bg-secondary rounded-md" />
+                  <TbBrandLinkedin className="text-base-100 p-1 w-10 h-10 bg-secondary rounded-md" />
                </li>
             </a>
             <a href="http://freelancer.com/u/yasserbouanani" target="blank">
                <li>
-                  <SiFreelancer className="text-primary-content p-1 w-10 h-10 bg-secondary rounded-md" />
+                  <SiFreelancer className="text-base-100 p-1 w-10 h-10 bg-secondary rounded-md" />
                </li>
             </a>
          </ul>
